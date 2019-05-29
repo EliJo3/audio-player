@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="/style.css"/>
+
+</head>
+<body>
+
+    <div class="header">
+        <h2>Attack on Titan Audio Player</h2>
+        
+    </div>
+
+    <div id="bg">
+        <div id="blacklayer">
+            <img src="images/poster 6.jpg"/>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="image">
+            <img src="/images/poster 6.jpg"/>
+
+        </div>
+        <div id="player">
+            <div id="songTitle">Demo</div>
+            <div id="buttons">
+                <button id="pre" onclick="pre()"><img src="/images/Pre.png" height="90%" width="90%"/></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="/images/Play.png"/></button>
+                <button id="next" onclick="next()"><img src="/images/Next.png" height="90%" width="90%"/></button>
+            </div>
+            <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="audio">
+            <audio id="myAudio-1" src="/audio/eye-water.mp3" controls></audio>
+            <audio id="myAudio-2" src="/audio/Kyojin Shinko.mp3" controls></audio>
+            <audio id="myAudio-3" src="/audio/Aramy Attack.mp3" controls></audio>
+    </div>
+    
+    <script src="/app.js"></script>
+    
+</body>
+</html>
